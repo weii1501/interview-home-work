@@ -1,0 +1,113 @@
+// Override default variables before the import
+$body-bg: #000;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+:root {
+  --text-color: #000;
+}
+
+body {
+  margin: 0;
+  background: #edf2f6;
+  font-family: dm sans,sans-serif;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+a {
+  //color: #007bff;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav .navbar-nav a:hover, .sidebar-nav .navbar-nav a.active {
+  color: #000;
+  background: #fff;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.tab {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.tab.active {
+  position: relative;
+  color: #000;
+  background: #f8f9fa;
+  //box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.tab.active::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #75a8e5;
+}
+
+.tab.non-active {
+  position: relative;
+  color: #848789;
+  background: #fff;
+  //box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.comments img {
+  height: 36px;
+  min-width: 36px;
+  width: 36px;
+}
+
+.collapse-comments:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+}
+
+.head-avt img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-size: 14px;
+}
+
+button.nav-link:hover {
+  color: #000 !important;
+  background: #fff;
+}
+
+

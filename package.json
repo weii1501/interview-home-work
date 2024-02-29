@@ -1,0 +1,68 @@
+{
+  "name": "zigvy-interview",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "latest",
+    "@babel/polyfill": "^7.12.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "antd": "5.14.2",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "connected-react-router": "^6.9.3",
+    "date-fns": "^3.3.1",
+    "dotenv": "^16.4.5",
+    "history": "^5.3.0",
+    "immer": "^10.0.3",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.11.3",
+    "react-dom": "^18.2.0",
+    "react-intl": "2.8.0",
+    "react-redux": "^9.1.0",
+    "react-router-dom": "^6.22.1",
+    "react-scripts": "5.0.1",
+    "redux": "4.0.1",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "1.0.2",
+    "reselect": "^5.1.0",
+    "sass": "^1.71.1",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "@faker-js/faker": "^8.4.1",
+    "autoprefixer": "^10.4.16",
+    "crypto-browserify": "^3.12.0",
+    "path-browserify": "^1.0.1",
+    "standard": "^17.1.0",
+    "stream-browserify": "^3.0.0"
+  }
+}
