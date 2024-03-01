@@ -13,7 +13,7 @@ export default function Comments () {
         <div key={`${comment.id}-${index}`} className='d-flex mb-3'>
           <Link to='#' className='me-2'>
             <img
-              src='/img/rmate1.jpg'
+              src='/interview-home-work/img/rmate1.jpg'
               alt='avt'
               className='img-fluid rounded-circle'
             />

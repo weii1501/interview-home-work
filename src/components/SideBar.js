@@ -10,7 +10,7 @@ export function SideBar () {
         <div className='w-100 mb-4 pb-4'>
           <Link to={PATH.HOME} className=''>
             <img
-              src='interview-home-work/img/logo.png'
+              src='/interview-home-work/img/logo.png'
               alt='logo brand'
               style={{ height: '51px' }}
             />
