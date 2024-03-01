@@ -2,6 +2,7 @@
   "name": "zigvy-interview",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://weii1501.github.io/interview-home-work/",
   "dependencies": {
     "@ant-design/icons": "latest",
     "@babel/polyfill": "^7.12.1",
@@ -39,7 +40,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
