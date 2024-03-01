@@ -10,6 +10,18 @@ export default function AppRouter () {
     <Routes>
       <Route
         exact
+        path='/'
+        element={
+          <Suspense fallback={<Loading />}>
+            <MainLayout>
+              <HomePage />
+            </MainLayout>
+          </Suspense>
+        }
+      />
+
+      <Route
+        exact
         path={PATH.HOME}
         element={
           <Suspense fallback={<Loading />}>
