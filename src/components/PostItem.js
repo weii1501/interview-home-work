@@ -13,7 +13,7 @@ export default function PostItem ({ post }) {
 
   return (
     <div className='bg-white p-3 rounded-4 mb-2 '>
-      <Link to={`/${post.id}`} className='fs-6 my-2 text-start' style={{ fontWeight: '600' }}>
+      <Link to={`/interview-home-work/${post.id}`} className='fs-6 my-2 text-start' style={{ fontWeight: '600' }}>
         {post.title}
       </Link>
       <p style={{ fontSize: '13px', marginBottom: 0 }}>

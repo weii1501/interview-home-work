@@ -36,7 +36,7 @@ export default function RightBar () {
             <ul className='pt-2 w-100 border-top overflow-y-scroll'>
               {posts?.map((post) => (
                 <li key={post.id} className='w-100 search-text'>
-                  <Link to={`/${post.id}`} className='text-muted w-100' style={{ fontSize: '14px' }}>
+                  <Link to={`/interview-home-work/${post.id}`} className='text-muted w-100' style={{ fontSize: '14px' }}>
                     {post.title}
                   </Link>
                 </li>

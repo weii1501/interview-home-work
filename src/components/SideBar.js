@@ -10,7 +10,7 @@ export function SideBar () {
         <div className='w-100 mb-4 pb-4'>
           <Link to={PATH.HOME} className=''>
             <img
-              src='img/logo.png'
+              src='interview-home-work/img/logo.png'
               alt='logo brand'
               style={{ height: '51px' }}
             />
@@ -19,7 +19,7 @@ export function SideBar () {
 
         <ul className='fs-6 navbar-nav w-100'>
           <li className='nav-item mb-2'>
-            <Link to='/' className='nav-link active p-3 rounded-4 d-flex align-items-center'>
+            <Link to='/interview-home-work' className='nav-link active p-3 rounded-4 d-flex align-items-center'>
               <span className='me-2'>
                 <Icon
                   iconName='HouseFill'
