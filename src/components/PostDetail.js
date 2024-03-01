@@ -19,14 +19,14 @@ export default function PostDetail () {
       {!loadingPostDetails && (
         <div className='bg-white p-3 rounded-4 mb-2 '>
           <h1 className='fs-4 my-1 text-center' style={{ fontWeight: '600' }}>
-            {post.title}
+            {post?.title}
           </h1>
           <User />
           <h6 style={{ fontSize: '13px' }}>
             Created: {fDate(faker.date.between('2015-01-01', '2015-01-05'))}
           </h6>
           <p style={{ fontSize: '13px' }}>
-            {post.body}
+            {post?.body}
           </p>
           <div className='d-flex justify-content-between'>
             <span
@@ -63,9 +63,9 @@ const User = () => {
 
   useEffect(() => {
     console.log(loadingPostDetails)
-    if (!loadingPostDetails && post.userId) {
+    if (!loadingPostDetails && post?.userId) {
       console.log('dispatching')
-      dispatch(getPostUser(post.userId))
+      dispatch(getPostUser(post?.userId))
     }
   }, [loadingPostDetails])
 

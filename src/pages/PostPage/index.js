@@ -18,9 +18,9 @@ export default function PostPage () {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getPostDetails(params.id))
-    dispatch(getPostComments(params.id))
-  }, [params.id])
+    dispatch(getPostDetails(params?.id))
+    dispatch(getPostComments(params?.id))
+  }, [params?.id])
 
   console.log(params)
   return (
