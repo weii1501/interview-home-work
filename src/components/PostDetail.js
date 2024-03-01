@@ -69,7 +69,7 @@ const User = () => {
     }
   }, [loadingPostDetails])
 
-  console.log(postUser)
+  // console.log(postUser)
 
   return (
     <h6 className='mb-0' style={{ fontSize: '13px' }}>

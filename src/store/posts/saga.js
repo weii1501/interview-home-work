@@ -1,6 +1,6 @@
 import { takeLatest, put, call } from 'redux-saga/effects'
 
-import {GET_POSTS, GET_POST_DETAILS, GET_POST_USER, GET_POST_COMMENTS} from './actionTypes'
+import { GET_POSTS, GET_POST_DETAILS, GET_POST_USER, GET_POST_COMMENTS } from './actionTypes'
 
 import {
   getPostsSuccess,
@@ -9,12 +9,17 @@ import {
   getPostDetailsFail, getPostUserSuccess, getPostUserFail, getPostCommentsSuccess, getPostCommentsFail
 } from './actions'
 
-import {getPosts, getPostDetails, getPostUser, getPostComments} from '../../helpers/backend_helper'
+import { getPosts, getPostDetails, getPostUser, getPostComments } from '../../helpers/backend_helper'
 
-function * onGetPosts () {
+function * onGetPosts ({ payload: pay }) {
   try {
-    const response = yield call(getPosts)
-    yield put(getPostsSuccess(response))
+
+    const response = yield call(getPosts, pay.page)
+    if (response.length > 0 && pay.page <= 10) {
+      yield put(getPostsSuccess([...pay.oldPosts, ...response]))
+    } else {
+      return
+    }
   } catch (error) {
     yield put(getPostsFail(error.response))
   }

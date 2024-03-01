@@ -14,8 +14,10 @@ import { PersistGate } from 'redux-persist/integration/react'
 // import { ConnectedRouter } from 'connected-react-router'
 import store from './store'
 import { persistor } from './store/persistor'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 // const initialState = {}
+const queryClient = new QueryClient()
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 // const MOUNT_NODE = document.getElementById('root')
@@ -23,7 +25,9 @@ root.render(
   <>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <IndexRouter />
+        <QueryClientProvider client={queryClient}>
+          <IndexRouter />
+        </QueryClientProvider>
       </PersistGate>
     </Provider>
   </>

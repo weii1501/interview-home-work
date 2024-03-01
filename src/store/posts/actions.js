@@ -12,9 +12,10 @@ import {
   GET_POST_COMMENTS_SUCCESS, GET_POST_COMMENTS_FAIL
 } from './actionTypes'
 
-export const getPosts = () => {
+export const getPosts = (pay) => {
   return {
-    type: GET_POSTS
+    type: GET_POSTS,
+    payload: { ...pay }
   }
 }
 
