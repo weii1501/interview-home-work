@@ -22,7 +22,7 @@ export default function AppRouter () {
 
       <Route
         exact
-        path='/:id'
+        path={PATH.POST}
         element={
           <Suspense fallback={<Loading />}>
             <MainLayout>

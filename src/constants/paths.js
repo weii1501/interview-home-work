@@ -1,5 +1,5 @@
 export const PATH = {
-  HOME: '/',
+  HOME: '/interview-home-work/',
   // LOGIN: '/login',
   // REGISTER: '/register',
   // BLOG: '/blog',
@@ -11,7 +11,7 @@ export const PATH = {
   // PAYMENT_SUCCESS: '/payment-result',
   // MY_COURSE: '/my-course',
   // MY_COURSE_LEARNING: '/my-course/learning'
-  POST: '/post'
+  POST: '/interview-home-work/:id'
 }
 
 export const LABEL = {
