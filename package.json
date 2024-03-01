@@ -14,6 +14,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "connected-react-router": "^6.9.3",
+    "core-js": "^3.36.0",
     "date-fns": "^3.3.1",
     "dotenv": "^16.4.5",
     "gh-pages": "^6.1.1",
@@ -33,6 +34,7 @@
     "redux": "4.0.1",
     "redux-persist": "^6.0.0",
     "redux-saga": "1.0.2",
+    "regenerator-runtime": "^0.14.1",
     "reselect": "^5.1.0",
     "sass": "^1.71.1",
     "web-vitals": "^2.1.0"
