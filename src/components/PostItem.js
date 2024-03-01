@@ -13,11 +13,11 @@ export default function PostItem ({ post }) {
 
   return (
     <div className='bg-white p-3 rounded-4 mb-2 '>
-      <Link to={`/${post.id}`} className='fs-5 my-1 text-start' style={{ fontWeight: '600' }}>
+      <Link to={`/${post.id}`} className='fs-6 my-2 text-start' style={{ fontWeight: '600' }}>
         {post.title}
       </Link>
       <p style={{ fontSize: '13px', marginBottom: 0 }}>
-        {post.body}
+        {post.body.length <= 100 ? post.body : `${post.body.substring(0, 100)}`}
       </p>
       <p className='text-muted' style={{ fontSize: '12px', marginBottom: 0 }}>
         Author: {user?.name} - {fDate(faker.date.between('2015-01-01', '2015-01-05'))}

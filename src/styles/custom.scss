@@ -110,4 +110,27 @@ button.nav-link:hover {
   background: #fff;
 }
 
+.search-text:hover  {
+  color: #000 !important;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+.search-text a {
+  width: 100% !important;
+  //background: #f1f1f1;
+}
+
+.search-text:hover a {
+  color: #000 !important;
+  //background: #f1f1f1;
+}
+
+.search-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; /* Thiết lập chiều rộng tối đa của phần tử */
+}
+
 
